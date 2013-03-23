@@ -7,13 +7,13 @@ var wathID = null;
 
 	$('#bInc').tap(function(){
 	
-		watchID = navigator.compass.watchHeading(function onSuccess(heading) {
+		watchID = navigator.compass.watchHeading(function(heading) {
 			
 			$('#bRes').text(heading.magneticHeading);
 			
-		}, function onError(compassError) {
+		}, function(compassError) {
 				alert('Compass error: ' + compassError.code);
-		}, { frequency: 3000 });
+		}, { frequency: 500 });
 	});
 	
 	$('#bDtn').tap(function(){
