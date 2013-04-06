@@ -1,11 +1,11 @@
 // JavaScript Document
 $(document).ready(function(e) {
-    document.addEventListener("deviceready",function(){
+  document.addEventListener("deviceready",function(){
 	alert('in');	
 
 var wathID = null;
 
-	$('#bInc').tap(function(){
+	$('#bInc').click(function(){
 		alert('touch');
 	
 		watchID = navigator.compass.watchHeading(function(heading) {
